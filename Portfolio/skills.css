@@ -1,5 +1,348 @@
 body {
- background: #0F172A; 
-height: 100vh;
+    background: #0F172A;
+    height: 100vh;
 }
 
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.card>div {
+    color: white;
+    background-color: black;
+    width: 220px;
+    height: 140px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.card>div:hover {
+    transform: scale(1.05);
+}
+
+/* animation */
+.card div:nth-child(1) .loader {
+    width: 96%;
+    height: 15px;
+    margin-top: 10px;
+    border: 2px solid #514b82;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #4b6e9f;
+    animation: loading 2s forwards;
+}
+
+@keyframes loading {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 10%;
+    }
+}
+
+.card div:nth-child(2) .loader {
+    width: 96%;
+    height: 15px;
+    margin-top: 10px;
+    border: 2px solid #514b82;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card div:nth-child(2) .loader::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #4b6e9f;
+    animation: loading2 2s forwards;
+}
+
+@keyframes loading2 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.card div:nth-child(3) .loader {
+    width: 96%;
+    height: 15px;
+    margin-top: 10px;
+    border: 2px solid #514b82;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card div:nth-child(3) .loader::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #4b6e9f;
+    animation: loading3 2s forwards;
+}
+
+@keyframes loading3 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+.card div:nth-child(4) .loader {
+    width: 96%;
+    height: 15px;
+    margin-top: 10px;
+    border: 2px solid #514b82;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card div:nth-child(4) .loader::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #4b6e9f;
+    animation: loading4 2s forwards;
+}
+
+@keyframes loading4 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+.card div:nth-child(5) .loader {
+    width: 96%;
+    height: 15px;
+    margin-top: 10px;
+    border: 2px solid #514b82;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card div:nth-child(5) .loader::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #4b6e9f;
+    animation: loading5 2s forwards;
+}
+
+@keyframes loading5 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 40%;
+    }
+}
+
+.card div:nth-child(6) .loader {
+    width: 96%;
+    height: 15px;
+    margin-top: 10px;
+    border: 2px solid #514b82;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card div:nth-child(6) .loader::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #4b6e9f;
+    animation: loading6 2s forwards;
+}
+
+@keyframes loading6 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 30%;
+    }
+}
+
+.card div:nth-child(7) .loader {
+    width: 96%;
+    height: 15px;
+    margin-top: 10px;
+    border: 2px solid #514b82;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card div:nth-child(7) .loader::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #4b6e9f;
+    animation: loading7 2s forwards;
+}
+
+@keyframes loading7 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 20%;
+    }
+}
+
+.card div:nth-child(8) .loader {
+    width: 96%;
+    height: 15px;
+    margin-top: 10px;
+    border: 2px solid #514b82;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card div:nth-child(8) .loader::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #4b6e9f;
+    animation: loading8 2s forwards;
+}
+
+@keyframes loading8 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 35%;
+    }
+}
+
+
+.dark-btn {
+    background-color: #101828;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dark-btn:hover {
+    background-color: #101828;
+    transform: scale(1.05);
+}
+
+.dark-btn:active {
+    transform: scale(0.95);
+}
+
+/*  TABLET */
+@media (max-width: 992px) {
+    body {
+        padding: 30px 4%;
+    }
+
+    body>h1 {
+        font-size: 50px;
+    }
+
+    body>p {
+        font-size: 18px;
+    }
+
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 700px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    body {
+        padding: 70px 20px 30px;
+    }
+
+    body>h1 {
+        font-size: 42px;
+    }
+
+    body>p {
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .card>div {
+        min-height: 140px;
+    }
+}

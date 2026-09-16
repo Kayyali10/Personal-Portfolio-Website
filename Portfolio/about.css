@@ -1,113 +1,186 @@
-body {
-    background-color: #0F172A;
-}
+    body {
+        background-color: #0F172A;
 
-.section {
-display: grid;
-grid-template-columns: repeat(2,1fr);
-}
-.section image {
-     width: 75%;
-     height: 550px;
-    overflow: hidden;
-}
+    }
 
-.section image img {
-     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-}
+    .section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-.section .about {
-    margin-top: 10px;
-}
+    .section .image {
+        width: 75%;
+        height: 550px;
+        overflow: hidden;
+    }
 
-.section .about h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    font-size: 70px;
-}
+    .section .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
 
-.section .about p {
-    color: #64748B;
-    font-size: 20px;
-    margin-top: -40px;
-}
+    .section .about {
+        margin-top: 10px;
+    }
 
-.section .about .my-experience {
-    margin-top: 70px;
-    display: flex;
-    gap: 10px;
-} 
+    .section .about h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        font-size: 70px;
+    }
 
+    .section .about p {
+        color: white;
+        font-size: 20px;
+        margin-top: -20px;
+    }
 
-.section .about .my-experience .edu p {
-color: white;
-padding: 10px;
-}
-
-.section .about .my-experience .edu p:nth-child(1){
-    text-align: center;
-    font-size: 80px;
-    color: #4b6e9f;
-
-}
-
-.section .about .my-experience .edu p:nth-child(2){
-    text-align: center;
-    font-size: 15px;
-    margin-top: -100px;
-}
+    .section .about .my-experience {
+        margin-top: 30px;
+        display: flex;
+        gap: 10px;
+    }
 
 
-.section .about .my-experience .exp p {
-color: white;
-padding: 10px;
-}
+    .section .about .my-experience .edu p {
+        color: white;
+        padding: 10px;
+    }
 
-.section .about .my-experience .exp p:nth-child(1){
-    text-align: center;
-    font-size: 80px;
-    color: #4b6e9f;
-
-}
-
-.section .about .my-experience .exp p:nth-child(2){
-    text-align: center;
-    font-size: 15px;
-    margin-top: -100px;
-}
+    .section .about .my-experience .edu p:nth-child(1) {
+        text-align: center;
+        font-size: 80px;
+        color: #4b6e9f;
 
 
-.section .about .my-experience .pro p {
-color: white;
-padding: 10px;
-}
+    }
 
-.section .about .my-experience .pro p:nth-child(1){
-    text-align: center;
-    font-size: 80px;
-    color: #4b6e9f;
+    .section .about .my-experience .edu p:nth-child(2) {
+        text-align: center;
+        font-size: 15px;
+        margin-top: -100px;
+    }
 
-}
 
-.section .about .my-experience .pro p:nth-child(2){
-    text-align: center;
-    font-size: 15px;
-    margin-top: -100px;
-}
+    .section .about .my-experience .exp p {
+        color: white;
+        padding: 10px;
+    }
 
-.le-more {
-    width: 150px;
-    color: white;
-    background-color: #4b6e9f;
-    border-radius: 40px;
-    border: 5px solid  #4b6e9f ;
-    transition: 0.5s;
-    
-}
+    .section .about .my-experience .exp p:nth-child(1) {
+        text-align: center;
+        font-size: 80px;
+        color: #4b6e9f;
 
-.le-more:hover {
-    transform: scale(1.05);
-}
+    }
+
+    .section .about .my-experience .exp p:nth-child(2) {
+        text-align: center;
+        font-size: 15px;
+        margin-top: -100px;
+    }
+
+
+    .section .about .my-experience .pro p {
+        color: white;
+        padding: 10px;
+    }
+
+    .section .about .my-experience .pro p:nth-child(1) {
+        text-align: center;
+        font-size: 80px;
+        color: #4b6e9f;
+
+    }
+
+    .section .about .my-experience .pro p:nth-child(2) {
+        text-align: center;
+        font-size: 15px;
+        margin-top: -100px;
+    }
+
+    .le-more {
+        width: 150px;
+        color: white;
+        background-color: #4b6e9f;
+        border-radius: 40px;
+        border: 5px solid #4b6e9f;
+        transition: 0.5s;
+
+    }
+
+    .le-more:hover {
+        transform: scale(1.05);
+    }
+
+    .dark-btn {
+        background-color: #101828;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .dark-btn:hover {
+        background-color: #101828;
+        transform: scale(1.05);
+    }
+
+    .dark-btn:active {
+        transform: scale(0.95);
+    }
+
+    /*  TABLET  */
+    @media (max-width: 992px) {
+        body {
+            padding: 30px 5%;
+        }
+
+        .section {
+            gap: 30px;
+        }
+
+        .section .image {
+            height: 450px;
+        }
+
+        .section .about h1 {
+            font-size: 50px;
+        }
+
+        .section .about>p {
+            font-size: 17px;
+        }
+
+        .section .about .my-experience {
+            gap: 10px;
+        }
+
+        .section .about .my-experience>div p:first-child {
+            font-size: 55px;
+        }
+    }
+
+    /*  MOBILE  */
+    @media (max-width: 768px) {
+        body {
+            padding: 70px 20px 30px;
+        }
+
+        .section {
+            grid-template-columns: 1fr;
+            min-height: auto;
+            gap: 30px;
+        }
+
+        /* Image */
+        .section .image {
+            order: 1;
+            width: 80%;
+            height: 350px;
+        }}

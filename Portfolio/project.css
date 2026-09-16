@@ -1,0 +1,229 @@
+body {
+    background: #0F172A;
+    height: 110vh;
+}
+
+.card-project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 80px;
+    margin-left: 160px;
+}
+
+.card-project>div {
+    color: white;
+    background-color: black;
+    width: 320px;
+    height: 440px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.card-project>div:hover {
+    transform: scale(1.05);
+}
+
+/* pro one */
+.card-project .pro-one {
+    position: relative;
+}
+
+.card-project .pro-one img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 50%;
+}
+
+.card-project .pro-one .name-pro {
+    position: absolute;
+    top: 225px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.card-project .pro-one .des-pro {
+    position: absolute;
+    top: 260px;
+    left: 10px;
+    font-size: 13px;
+}
+
+.card-project .pro-one .tec-one {
+    position: absolute;
+    top: 350px;
+    left: 10px;
+    background-color: #687da6;
+    color: white;
+    border-radius: 15px;
+    width: 50px;
+    
+}
+
+.card-project .pro-one .tec-two {
+    position: absolute;
+    top: 350px;
+    left: 70px;
+    background-color: #687da6;
+    color: white;
+    border-radius: 15px;
+    width: 50px;
+}
+
+.card-project .pro-one .tec-three {
+    position: absolute;
+    top: 350px;
+    left: 130px;
+    background-color: #687da6;
+    color: white;
+    border-radius: 15px;
+    width: 65px;
+}
+
+.card-project .pro-one .tec-four {
+    position: absolute;
+    top: 350px;
+    left: 205px;
+    background-color: #687da6;
+    color: white;
+    border-radius: 15px;
+    width: 65px;
+}
+
+/* pro two */
+
+.card-project .pro-two {
+    position: relative;
+}
+
+.card-project .pro-two img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 50%;
+}
+
+.card-project .pro-two .name-pro {
+    position: absolute;
+    top: 225px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.card-project .pro-two .des-pro {
+    position: absolute;
+    top: 260px;
+    left: 10px;
+    font-size: 13px;
+}
+
+.card-project .pro-two .tec-two {
+    position: absolute;
+    top: 350px;
+    left: 10px;
+    background-color: #687da6;
+    color: white;
+    border-radius: 15px;
+    width: 50px;
+}
+
+.card-project .pro-two .tec-three {
+    position: absolute;
+    top: 350px;
+    left: 70px;
+    background-color: #687da6;
+    color: white;
+    border-radius: 15px;
+    width: 65px;
+}
+
+.dark-btn {
+    background-color: #101828;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dark-btn:hover {
+    background-color: #101828;
+    transform: scale(1.05);
+}
+
+.dark-btn:active {
+    transform: scale(0.95);
+}
+
+
+/* TABLET */
+@media (max-width: 992px) {
+    body {
+        padding: 30px 4%;
+    }
+
+    body>h1 {
+        font-size: 50px;
+    }
+
+    body>p {
+        font-size: 18px;
+    }
+
+    .card-project {
+        grid-template-columns: repeat(2, minmax(280px, 320px));
+        gap: 25px;
+        margin-top: 50px;
+    }
+}
+
+/*  MOBILE  */
+@media (max-width: 768px) {
+    body {
+        padding: 70px 20px 30px;
+    }
+
+    body>h1 {
+        font-size: 42px;
+    }
+
+    body>p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .card-project {
+        grid-template-columns: minmax(280px, 400px);
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .card-project>div {
+        width: 100%;
+    }
+}
+
+.view-pro {
+        width: 130px;
+        align-self: center;
+        position: absolute;
+        bottom: 5%;
+        left: 3%;
+        background-color: #687da6;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+}

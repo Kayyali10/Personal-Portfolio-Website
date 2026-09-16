@@ -1,58 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="homepage.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #101828;  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);">
-    <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="position: relative;" >
-        <div class="navbar-nav"  >
-            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-            <a class="nav-link text-white" href="about.html">About</a>
-            <a class="nav-link text-white" href="#">Skills</a>
-            <a class="nav-link text-white" href="#">Project</a>
-        </div>
-        <button style="position: absolute; right:0;" class="dark-btn">🌙</button>
-        </div>
-    </div>
-    </nav>
-        
-    <div class="section">
-            <div class="about-me">
-                <h1>Hi, I`m Ahmad Kayyali</h1>
-                <h5>I`m Full Stack Developer</h5>
-                <p style="margin-left:120px ; color: #64748B;">Full Stack Developer specialized in building end-to-end web solutions. I combine clean, responsive front-end design with powerful, efficient back-end architecture to deliver seamless user experiences</p>
-                <div class="btn">
-                  <button class="b-one">⬇️ Download CV</button>
-                  <button class="b-two">📩 Contact Me  </button>
+    <nav class="navbar navbar-expand-lg navbar-light "
+        style="background-color: #101828;  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); position: fixed;width: 100%; top: 0;">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#" style="color: white;">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="position: relative;">
+                <div class="navbar-nav">
+                    <a class="nav-link active " aria-current="page" href="#" style="color: white;">Home</a>
+                    <a class="nav-link" href="about.html" style="color: white;">About</a>
+                    <a class="nav-link " href="skills.html" style="color: white;">Skills</a>
+                    <a class="nav-link " href="project.html" style="color: white;">Project</a>
                 </div>
+                <!-- <button style="position: absolute; right:0;" class="dark-btn">🌙</button> -->
             </div>
-            <div class="image" >
-              <img src="img/img-one-removebg-preview.png" alt="sdasd">
+        </div>
+    </nav>
+
+    <div class="section">
+        <div class="about-me">
+            <h1 style="color: white;">Hi, I`m Ahmad Kayyali</h1>
+            <h5 style="color: white;">I`m Full Stack Developer</h5>
+            <p style="margin-left:120px ; color: white;">Full Stack Developer specialized in building end-to-end web
+                solutions. I combine clean, responsive front-end design with powerful, efficient back-end architecture
+                to deliver seamless user experiences</p>
+            <div class="btn">
+                <a href="Ahmad_Kayyali_-_Software_engineering.docx"><button class="b-one" style="color: white">⬇️ Download CV</button></a> 
+                <a href="https://www.linkedin.com/in/ahmed-kayyali-2436a035b/" target="_blank"><button class="b-two" style="color: white ;">📩 Contact Me </button></a>
             </div>
+        </div>
+        <div class="image">
+            <img src="img/img-one-removebg-preview.png" alt="sdasd">
         </div>
 
-         <div class="navbar navbar-expand-lg navbar-light " style="background-color: black;  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);">
-        <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
-        <div class="navbar-nav" style="margin-left: 400px;">
-            <a class="nav-link text-white" href="https://github.com/dashboard" target="_blank">🐙  GitHub</a>
-            <a class="nav-link text-white" href="https://www.facebook.com/" target="_blank">ⓕ  Facebook</a>
-            <a class="nav-link text-white" href="https://www.linkedin.com/in/ahmed-kayyali-2436a035b/ " target="_blank">🔗  Link</a>
     </div>
-</div>
+
+    <form action="">
+        <h1>Let's Connect</h1>
+        <p>
+            Tell us about your next project.
+            We'd love to bring it to life.
+        </p>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea placeholder="Tell me about your project..."></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+    
+
+
+    <div class="navbar navbar-expand-lg navbar-light " style="background-color: #101828    ;  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);  position: fixed;
+        width: 100%;
+        z-index: 1000;
+        bottom: 0;">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#" style="color: white;">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" style="margin-left: 400px;">
+                    <a class="nav-link " href="https://github.com/dashboard" target="_blank" style="color: white;">🐙
+                        GitHub</a>
+                    <a class="nav-link " href="https://www.facebook.com/" target="_blank" style="color: white;">ⓕ
+                        Facebook</a>
+                    <a class="nav-link " href="https://www.linkedin.com/in/ahmed-kayyali-2436a035b/ " target="_blank"
+                        style="color: white;">🔗 Link</a>
+                </div>
 </body>
+
 </html>
