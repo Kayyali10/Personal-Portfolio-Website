@@ -1,5 +1,5 @@
 # Personal-Portfolio-Website
-Welcome to my personal portfolio website! 👋
+Welcome to my personal portfolio website! 
 This portfolio was created to introduce myself,
 showcase my technical skills,
 highlight my projects, and provide a way for potential employers or clients to get in touch with me.
