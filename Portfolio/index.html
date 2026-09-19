@@ -12,7 +12,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light "
-        style="background-color: #101828;  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); position: fixed;width: 100%; top: 0;">
+        style="background-color: #101828;  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); position: fixed;width: 100%; top: 0; z-index: 9999;">
         <div class="container-fluid">
             <a class="navbar-brand " href="#" style="color: white;">Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -21,17 +21,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="position: relative;">
                 <div class="navbar-nav">
-                    <a class="nav-link active " aria-current="page" href="#" style="color: white;">Home</a>
-                    <a class="nav-link" href="about.html" style="color: white;">About</a>
-                    <a class="nav-link " href="skills.html" style="color: white;">Skills</a>
-                    <a class="nav-link " href="project.html" style="color: white;">Project</a>
+                    <a class="nav-link active " aria-current="page" href="#home" style="color: white;">Home</a>
+                    <a class="nav-link" href="#about" style="color: white;">About</a>
+                    <a class="nav-link " href="#skill" style="color: white;">Skills</a>
+                    <a class="nav-link " href="#project" style="color: white;">Project</a>
                 </div>
                 <!-- <button style="position: absolute; right:0;" class="dark-btn">🌙</button> -->
             </div>
         </div>
     </nav>
-
-    <div class="section">
+    <!-- home -->
+    <div class="section" id="home">
         <div class="about-me">
             <h1 style="color: white;">Hi, I`m Ahmad Kayyali</h1>
             <h5 style="color: white;">I`m Full Stack Developer</h5>
@@ -41,8 +41,7 @@
             <div class="btn">
                 <a href="Ahmad_Kayyali_-_Software_engineering.docx"><button class="b-one" style="color: white">⬇️
                         Download CV</button></a>
-                <a href="https://www.linkedin.com/in/ahmed-kayyali-2436a035b/" target="_blank"><button class="b-two"
-                        style="color: white ;">📩 Contact Me </button></a>
+                <a href="#connect"><button class="b-two" style="color: white ;">📩 Contact Me </button></a>
             </div>
         </div>
         <div class="image">
@@ -52,7 +51,7 @@
     </div>
 
     <!-- connect me  -->
-    <form action="">
+    <form action="" id="connect">
         <h1>Let's Connect</h1>
         <p>
             Tell us about your next project.
@@ -73,7 +72,7 @@
 
     <!-- about -->
 
-    <div class="section">
+    <div class="section" id="about">
         <div class="image">
             <img src="img/img-one-removebg-preview.png" alt="asd">
         </div>
@@ -106,96 +105,106 @@
 
     <!-- skills -->
 
-
-    <h1 style="color: white; text-align: center; font-size: 60px;">My <span style="color:#687da6;">Skills</span></h1>
-    <p style="text-align: center;color: white; font-size: 20px;">Technologies and tools I use to build fast, scalable,
-        and user-friendly web applications.</p>
-    <div class="skills-container">
-        <div>
-            <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" width="24" height="24">
-            <h2 style="display: inline;">Laravel</h2>
-            <p>Proficiency</p>
-            <p style="position: relative; top:-32px; left:200px;">10%</p>
-            <div class="loader"></div>
-        </div>
-        <div>
-            <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" width="24" height="24">
-            <h2 style="display: inline;">git&&github</h2>
-            <p>Proficiency</p>
-            <p style="position: relative; top:-32px; left:200px;">100%</p>
-            <div class="loader"></div>
-        </div>
-        <div>
-            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="24" height="24">
-            <h2 style="display: inline;">HTML</h2>
-            <p>Proficiency</p>
-            <p style="position: relative; top:-32px; left:200px;">100%</p>
-            <div class="loader"></div>
-        </div>
-        <div>
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/css3.svg" alt="CSS3" width="24" height="24"
-                style="filter: invert(30%) sepia(80%) saturate(2000%) hue-rotate(180deg);">
-            <h2 style="display: inline;">CSS</h2>
-            <p>Proficiency</p>
-            <p style="position: relative; top:-32px; left:200px;">80%</p>
-            <div class="loader"></div>
-        </div>
-        <div>
-            <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="24" height="24">
-            <h2 style="display: inline;">Javascript</h2>
-            <p>Proficiency</p>
-            <p style="position: relative; top:-32px; left:200px;">40%</p>
-            <div class="loader"></div>
-        </div>
-        <div>
-            <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="24" height="24">
-            <h2 style="display: inline;">React</h2>
-            <p>Proficiency</p>
-            <p style="position: relative; top:-32px; left:200px;">30%</p>
-            <div class="loader"></div>
-        </div>
-        <div>
-            <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="24" height="24">
-            <h2 style="display: inline;">Python</h2>
-            <p>Proficiency</p>
-            <p style="position: relative; top:-32px; left:200px;">20%</p>
-            <div class="loader"></div>
-        </div>
-        <div>
-            <img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" width="24" height="24">
-            <h2 style="display: inline;">PHP</h2>
-            <p>Proficiency</p>
-            <p style="position: relative; top:-32px; left:200px;">35%</p>
-            <div class="loader"></div>
+    <div class="skills" id="skill">
+        <h1 style="color: white; text-align: center; font-size: 60px;">My <span style="color:#687da6;">Skills</span>
+        </h1>
+        <p style="text-align: center;color: white; font-size: 20px;">Technologies and tools I use to build fast,
+            scalable,
+            and user-friendly web applications.</p>
+        <div class="skills-container">
+            <div>
+                <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" width="24" height="24">
+                <h2 style="display: inline;">Laravel</h2>
+                <p>Proficiency</p>
+                <p style="position: relative; top:-32px; left:200px;">10%</p>
+                <div class="loader"></div>
+            </div>
+            <div>
+                <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" width="24" height="24">
+                <h2 style="display: inline;">git&&github</h2>
+                <p>Proficiency</p>
+                <p style="position: relative; top:-32px; left:200px;">100%</p>
+                <div class="loader"></div>
+            </div>
+            <div>
+                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="24" height="24">
+                <h2 style="display: inline;">HTML</h2>
+                <p>Proficiency</p>
+                <p style="position: relative; top:-32px; left:200px;">100%</p>
+                <div class="loader"></div>
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/css3.svg" alt="CSS3" width="24"
+                    height="24" style="filter: invert(30%) sepia(80%) saturate(2000%) hue-rotate(180deg);">
+                <h2 style="display: inline;">CSS</h2>
+                <p>Proficiency</p>
+                <p style="position: relative; top:-32px; left:200px;">80%</p>
+                <div class="loader"></div>
+            </div>
+            <div>
+                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="24" height="24">
+                <h2 style="display: inline;">Javascript</h2>
+                <p>Proficiency</p>
+                <p style="position: relative; top:-32px; left:200px;">40%</p>
+                <div class="loader"></div>
+            </div>
+            <div>
+                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="24" height="24">
+                <h2 style="display: inline;">React</h2>
+                <p>Proficiency</p>
+                <p style="position: relative; top:-32px; left:200px;">30%</p>
+                <div class="loader"></div>
+            </div>
+            <div>
+                <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="24" height="24">
+                <h2 style="display: inline;">Python</h2>
+                <p>Proficiency</p>
+                <p style="position: relative; top:-32px; left:200px;">20%</p>
+                <div class="loader"></div>
+            </div>
+            <div>
+                <img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" width="24" height="24">
+                <h2 style="display: inline;">PHP</h2>
+                <p>Proficiency</p>
+                <p style="position: relative; top:-32px; left:200px;">35%</p>
+                <div class="loader"></div>
+            </div>
         </div>
     </div>
 
     <!-- project  -->
 
-     <h1 style="color: white; text-align: center; font-size: 60px;">My <span style="color:#687da6;">Project</span></h1>
-    <p style="text-align: center;color: white; font-size: 20px;">Technologies and tools I use to build fast, scalable,
-        and user-friendly web applications.</p>
-    <div class="card-project">
-        
-        <div class="pro-one">
-          <img src="img/scrumMena.png" alt="scrum">
-          <p class="name-pro">scrum Mena</p>
-          <p class="des-pro">CRUM is a comprehensive scrum management system that helps teams plan, track, and deliver projects with AI-powered insights and automation.</p>
-          <button class="tec-one">JS</button>
-          <button class="tec-two">CSS</button>
-          <button class="tec-three">HTML</button>
-          <button class="tec-four">React</button>
-          <a href="https://github.com/ittsmoa/Scrum-Project-Management--System.git"><button class="view-pro">view Project</button></a>
-        </div>
-       <div class="pro-two">
-          <img src="img/portfolio.png" alt="scrum">
-          <p class="name-pro">Portfolio</p>
-          <p class="des-pro">Full Stack Developer building clean and functional web experiences</p>
-          <button class="tec-two">CSS</button>
-          <button class="tec-three">HTML</button>
-          <a href="https://github.com/Kayyali10/Personal-Portfolio-Website.git"><button class="view-pro">view Project</button></a>
-        </div>
-        <!-- <div class="pro-one">
+    <div class="project" id="project">
+        <h1 style="color: white; text-align: center; font-size: 60px;">My <span style="color:#687da6;">Project</span>
+        </h1>
+        <p style="text-align: center;color: white; font-size: 20px;">Technologies and tools I use to build fast,
+            scalable,
+            and user-friendly web applications.</p>
+        <div class="card-project">
+
+            <div class="pro-one">
+                <img src="img/scrumMena.png" alt="scrum">
+                <p class="name-pro">scrum Mena</p>
+                <p class="des-pro">CRUM is a comprehensive scrum management system that helps teams plan, track, and
+                    deliver
+                    projects with AI-powered insights and automation.</p>
+                <button class="tec-one">JS</button>
+                <button class="tec-two">CSS</button>
+                <button class="tec-three">HTML</button>
+                <button class="tec-four">React</button>
+                <a href="https://github.com/ittsmoa/Scrum-Project-Management--System.git"><button class="view-pro">view
+                        Project</button></a>
+            </div>
+            <div class="pro-two">
+                <img src="img/portfolio.png" alt="scrum">
+                <p class="name-pro">Portfolio</p>
+                <p class="des-pro">Full Stack Developer building clean and functional web experiences</p>
+                <button class="tec-two">CSS</button>
+                <button class="tec-three">HTML</button>
+                <a href="https://github.com/Kayyali10/Personal-Portfolio-Website.git"><button class="view-pro">view
+                        Project</button></a>
+            </div>
+            <!-- <div class="pro-one">
           <img src="img/scrumMena.png" alt="scrum">
           <p class="name-pro">scrum Mena</p>
           <p class="des-pro">CRUM is a comprehensive scrum management system that helps teams plan, track, and deliver projects with AI-powered insights and automation.</p>
@@ -204,8 +213,8 @@
           <button class="tec-three">HTML</button>
           <button class="tec-four">React</button>
         </div> -->
+        </div>
     </div>
-
     <div class="navbar navbar-expand-lg navbar-light " style="background-color: #101828    ;  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);  position: fixed;
         width: 100%;
         z-index: 1000;
@@ -223,7 +232,7 @@
                     <a class="nav-link " href="https://www.facebook.com/" target="_blank" style="color: white;">ⓕ
                         Facebook</a>
                     <a class="nav-link " href="https://www.linkedin.com/in/ahmed-kayyali-2436a035b/ " target="_blank"
-                        style="color: white;">🔗 Link</a>
+                        style="color: white;">🔗 LinkedIn</a>
                 </div>
 </body>
 

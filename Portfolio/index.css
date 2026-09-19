@@ -1,6 +1,6 @@
     body {
         background: #0F172A;
-        height: 480vh;
+        height: 520vh;
     }
 
     a {
@@ -254,7 +254,7 @@
     }
 
     .section .about {
-        margin-top: 10px;
+        margin-top: 110px;
     }
 
     .section .about h1 {
@@ -420,6 +420,11 @@
 
     /*  SKILLS  */
 
+
+.skills {
+margin-top: 100px;
+
+ }   
 .skills-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -595,7 +600,7 @@
 }
 
 
-/* ================= TABLET ================= */
+/*  TABLET */
 
 @media (max-width: 992px) {
 
@@ -611,7 +616,7 @@
 }
 
 
-/* ================= MOBILE ================= */
+/*  MOBILE */
 
 @media (max-width: 768px) {
 
@@ -630,7 +635,9 @@
 
 /* project  */
 
-
+.project {
+    margin-top: 100px;
+}
 .card-project {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -833,6 +840,8 @@
         grid-template-columns: minmax(280px, 400px);
         gap: 25px;
         margin-top: 40px;
+        margin-left: 10px;
+
     }
 
     .card-project>div {
