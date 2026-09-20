@@ -11,25 +11,29 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light "
-        style="background-color: #101828;  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); position: fixed;width: 100%; top: 0; z-index: 9999;">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="#" style="color: white;">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="position: relative;">
-                <div class="navbar-nav">
-                    <a class="nav-link active " aria-current="page" href="#home" style="color: white;">Home</a>
-                    <a class="nav-link" href="#about" style="color: white;">About</a>
-                    <a class="nav-link " href="#skill" style="color: white;">Skills</a>
-                    <a class="nav-link " href="#project" style="color: white;">Project</a>
-                </div>
-                <!-- <button style="position: absolute; right:0;" class="dark-btn">🌙</button> -->
+
+
+    <nav class="nav">
+
+        <!-- Logo -->
+        <a href="#home" class="logo">
+            <div class="logo-icon">AK</div>
+            <div class="logo-name">
+                <span>Ahmad</span>
+                <span>Kayyali</span>
             </div>
+        </a>
+
+        <!-- Navigation -->
+        <div class="action-btn">
+            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#skill">Skills</a>
+            <a class="nav-link" href="#project">Project</a>
         </div>
+
     </nav>
+
     <!-- home -->
     <div class="section" id="home">
         <div class="about-me">
@@ -49,26 +53,6 @@
         </div>
 
     </div>
-
-    <!-- connect me  -->
-    <form action="" id="connect">
-        <h1>Let's Connect</h1>
-        <p>
-            Tell us about your next project.
-            We'd love to bring it to life.
-        </p>
-
-        <input type="text" placeholder="Your Name">
-
-        <input type="email" placeholder="Your Email">
-
-        <textarea placeholder="Tell me about your project..."></textarea>
-
-        <button type="submit">
-            Send Message
-        </button>
-
-    </form>
 
     <!-- about -->
 
@@ -105,72 +89,96 @@
 
     <!-- skills -->
 
+
     <div class="skills" id="skill">
-        <h1 style="color: white; text-align: center; font-size: 60px;">My <span style="color:#687da6;">Skills</span>
+
+        <h1 class="skills-title">
+            My <span>Skills</span>
         </h1>
-        <p style="text-align: center;color: white; font-size: 20px;">Technologies and tools I use to build fast,
-            scalable,
-            and user-friendly web applications.</p>
+
+        <p class="skills-description">
+            Technologies and tools I use to build fast, scalable,
+            and user-friendly web applications.
+        </p>
+
         <div class="skills-container">
-            <div>
-                <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" width="24" height="24">
-                <h2 style="display: inline;">Laravel</h2>
-                <p>Proficiency</p>
-                <p style="position: relative; top:-32px; left:200px;">10%</p>
-                <div class="loader"></div>
+
+            <!-- Laravel -->
+            <div class="skill-card">
+                <div class="icon-box">
+                    <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel">
+                </div>
+                <h4>Laravel</h4>
+                <p>Web Framework</p>
             </div>
-            <div>
-                <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" width="24" height="24">
-                <h2 style="display: inline;">git&&github</h2>
-                <p>Proficiency</p>
-                <p style="position: relative; top:-32px; left:200px;">100%</p>
-                <div class="loader"></div>
+
+            <!-- Git & GitHub -->
+            <div class="skill-card">
+                <div class="icon-box">
+                    <img src="https://cdn.simpleicons.org/git/F05032" alt="Git">
+                </div>
+                <h4>Git & GitHub</h4>
+                <p>Version Control</p>
             </div>
-            <div>
-                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="24" height="24">
-                <h2 style="display: inline;">HTML</h2>
-                <p>Proficiency</p>
-                <p style="position: relative; top:-32px; left:200px;">100%</p>
-                <div class="loader"></div>
+
+            <!-- HTML -->
+            <div class="skill-card">
+                <div class="icon-box">
+                    <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5">
+                </div>
+                <h4>HTML</h4>
+                <p>Web Structure</p>
             </div>
-            <div>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/css3.svg" alt="CSS3" width="24"
-                    height="24" style="filter: invert(30%) sepia(80%) saturate(2000%) hue-rotate(180deg);">
-                <h2 style="display: inline;">CSS</h2>
-                <p>Proficiency</p>
-                <p style="position: relative; top:-32px; left:200px;">80%</p>
-                <div class="loader"></div>
+
+            <!-- CSS -->
+            <div class="skill-card">
+                <div class="icon-box">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/css3.svg" alt="CSS3" class="css-icon">
+                </div>
+                <h4>CSS</h4>
+                <p>Web Styling</p>
             </div>
-            <div>
-                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="24" height="24">
-                <h2 style="display: inline;">Javascript</h2>
-                <p>Proficiency</p>
-                <p style="position: relative; top:-32px; left:200px;">40%</p>
-                <div class="loader"></div>
+
+            <!-- JavaScript -->
+            <div class="skill-card">
+                <div class="icon-box">
+                    <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript">
+                </div>
+                <h4>JavaScript</h4>
+                <p>Programming</p>
             </div>
-            <div>
-                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="24" height="24">
-                <h2 style="display: inline;">React</h2>
-                <p>Proficiency</p>
-                <p style="position: relative; top:-32px; left:200px;">30%</p>
-                <div class="loader"></div>
+
+            <!-- React -->
+            <div class="skill-card">
+                <div class="icon-box">
+                    <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React">
+                </div>
+                <h4>React</h4>
+                <p>Frontend Library</p>
             </div>
-            <div>
-                <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="24" height="24">
-                <h2 style="display: inline;">Python</h2>
-                <p>Proficiency</p>
-                <p style="position: relative; top:-32px; left:200px;">20%</p>
-                <div class="loader"></div>
+
+            <!-- Python -->
+            <div class="skill-card">
+                <div class="icon-box">
+                    <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
+                </div>
+                <h4>Python</h4>
+                <p>Programming</p>
             </div>
-            <div>
-                <img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" width="24" height="24">
-                <h2 style="display: inline;">PHP</h2>
-                <p>Proficiency</p>
-                <p style="position: relative; top:-32px; left:200px;">35%</p>
-                <div class="loader"></div>
+
+            <!-- PHP -->
+            <div class="skill-card">
+                <div class="icon-box">
+                    <img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP">
+                </div>
+                <h4>PHP</h4>
+                <p>Backend Language</p>
             </div>
+
         </div>
     </div>
+
+
 
     <!-- project  -->
 
@@ -192,7 +200,7 @@
                 <button class="tec-two">CSS</button>
                 <button class="tec-three">HTML</button>
                 <button class="tec-four">React</button>
-                <a href="https://github.com/ittsmoa/Scrum-Project-Management--System.git"><button class="view-pro">view
+                <a href="https://github.com/ittsmoa/Scrum-Project-Management--System.git" target="_blank"><button class="view-pro">view
                         Project</button></a>
             </div>
             <div class="pro-two">
@@ -201,7 +209,7 @@
                 <p class="des-pro">Full Stack Developer building clean and functional web experiences</p>
                 <button class="tec-two">CSS</button>
                 <button class="tec-three">HTML</button>
-                <a href="https://github.com/Kayyali10/Personal-Portfolio-Website.git"><button class="view-pro">view
+                <a href="https://github.com/Kayyali10/Personal-Portfolio-Website.git" target="_blank"><button class="view-pro">view
                         Project</button></a>
             </div>
             <!-- <div class="pro-one">
@@ -215,25 +223,37 @@
         </div> -->
         </div>
     </div>
-    <div class="navbar navbar-expand-lg navbar-light " style="background-color: #101828    ;  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);  position: fixed;
-        width: 100%;
-        z-index: 1000;
-        bottom: 0;">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="#" style="color: white;">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav" style="margin-left: 400px;">
-                    <a class="nav-link " href="https://github.com/dashboard" target="_blank" style="color: white;">🐙
-                        GitHub</a>
-                    <a class="nav-link " href="https://www.facebook.com/" target="_blank" style="color: white;">ⓕ
-                        Facebook</a>
-                    <a class="nav-link " href="https://www.linkedin.com/in/ahmed-kayyali-2436a035b/ " target="_blank"
-                        style="color: white;">🔗 LinkedIn</a>
-                </div>
+    <!-- connect me  -->
+    <form action="" id="connect">
+        <h1>Let's Connect</h1>
+        <p>
+            Tell us about your next project.
+            We'd love to bring it to life.
+        </p>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea placeholder="Tell me about your project..."></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+    <div class="footer">
+        <div class="c-right">© 2026 Ahmad Kayyali. All Rights Reserved.</div>
+        <div class="links">
+            <a class="nav-link " href="https://github.com/dashboard" target="_blank" style="color: white;">🐙
+                GitHub</a>
+            <a class="nav-link " href="https://www.facebook.com/" target="_blank" style="color: white;">ⓕ
+                Facebook</a>
+            <a class="nav-link " href="https://www.linkedin.com/in/ahmed-kayyali-2436a035b/ " target="_blank"
+                style="color: white;">🔗 LinkedIn</a>
+        </div>
+    </div>
 </body>
 
 </html>
